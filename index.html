@@ -9,47 +9,117 @@
 </head>
 
 <body>
-    <header>
-        <!-- <a href="https://www.linkedin.com/in/yazmin-aleman-33a02328b"></a> -->
-        <img src="yazmin.jpg" width="200" class="photo">
-        <!-- <p>Click on my photo to connect</p> -->
-        <div class="intro">
-            <h1>Yazmin Aleman</h1>
-            <p>Welcome to my website</p>
-        </div>
+
+    <nav class="navbar">
+        <div class="background-shapes"></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button id="darkModeToggle">🌙</button>
+    </nav>
+
+    <header class="hero">
+        <img src="fallfamily25-56 (1).JPG" class="photo">
+        <h1>Hi! I am Yazmin Aleman</h1>
+        <p id="typing"></p>
     </header>
 
+    <div id="greeting"></div>
+
     <main>
-        <section>
-            <h2>About me</h2>
-            <p>Here are some things about me!</p>
+
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <p class="aboutme">
+                I am a Production Manager with 18 years of experience in nutraceutical manufacturing, now transitioning
+                into Tech Project Management. I specialize in leadership, workflow optimization, and delivering complex
+                projects on time. As a proud Tech Mom, I have also been part of a strong community of women in tech,
+                which
+                has expanded my network, strengthened my collaboration skills, and inspired my transition into the tech
+                industry.
+            </p>
         </section>
 
-        <section>
+        <section id="skills" class="reveal">
             <h2>Skills</h2>
-            <p>I am pretty good at coding!!</p>
-            <h3>Here are my Skills:</h3>
-            <ul>
-                <li>Multi-task</li>
-                <li>Organization</li>
-                <li>Leadership</li>
-            </ul>
+
+            <div class="skill">
+                <p>Project Management</p>
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Leadership</p>
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Process Optimization</p>
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <p>Agile Mindset</p>
+                <div class="progress">
+                    <div class="progress-bar" data-width="100%"></div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
+        <section id="experience" class="reveal">
             <h2>Work Experience</h2>
-            <p>Working on my Portafolio</p>
+            <button onclick="openModal()">View Details</button>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>Production Optimization Initiative</h3>
+                <p>Improved operational efficiency by implementing workflow redesign and KPI tracking systems.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Cross-Shift Communication System</h3>
+                <p>Developed reporting and pass-down systems to reduce quality errors.</p>
+            </div>
+
         </section>
 
     </main>
 
-    <footer class="centered">
-        <a href="https://www.linkedin.com/in/yazmin-aleman-33a02328b">Connect with me on LinkedIn</a>
-        </>
-        <img src="Icon.png" width="50">
+    <footer>
+        <a href="https://www.linkedin.com/in/yazmin-aleman-33a02328b" target="_blank"> Connect with me on LinkedIn </a>
+
     </footer>
 
 
+
+    <!-- Modal -->
+    <div id="experienceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Detailed Experience</h2>
+            <ul>
+                <li>Led cross-functional teams across 3 shifts.</li>
+                <li>Managed high-volume production projects.</li>
+                <li>Reduced downtime through process improvements.</li>
+                <li>Oversaw risk mitigation and scheduling.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
